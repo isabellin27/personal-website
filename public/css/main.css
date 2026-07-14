@@ -234,6 +234,38 @@ footer {
 .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
+/* AI LAB NAV LINK */
+.nav-links a.nav-lab {
+  display: inline-flex; align-items: center; gap: 7px;
+  color: var(--gold-light);
+}
+.nav-links a.nav-lab:hover { color: var(--gold); }
+.nav-lab-dot {
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: #62B98C; box-shadow: 0 0 0 0 rgba(98,185,140,0.6);
+  animation: livepulse 2s infinite; flex-shrink: 0;
+}
+
+/* LIVE DOT + GLOW BUTTON (global) */
+@keyframes livepulse {
+  0% { box-shadow: 0 0 0 0 rgba(98,185,140,0.55); }
+  70% { box-shadow: 0 0 0 7px rgba(98,185,140,0); }
+  100% { box-shadow: 0 0 0 0 rgba(98,185,140,0); }
+}
+.lab-live-dot {
+  display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+  background: #62B98C; box-shadow: 0 0 0 0 rgba(98,185,140,0.55);
+  animation: livepulse 2s infinite; flex-shrink: 0;
+}
+.btn-gold { display: inline-flex; align-items: center; gap: 9px; }
+.btn-live-dot {
+  display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--navy); flex-shrink: 0; animation: dotblink 1.6s infinite;
+}
+@keyframes dotblink { 50% { opacity: 0.35; } }
+.btn-gold-glow { box-shadow: 0 0 22px rgba(180,154,94,0.35); animation: goldpulse 3s ease-in-out infinite; }
+@keyframes goldpulse { 50% { box-shadow: 0 0 36px rgba(180,154,94,0.6); } }
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   nav { padding: 20px 32px; }

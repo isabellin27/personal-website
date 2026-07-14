@@ -1,0 +1,80 @@
+<div class="tt-page">
+
+  <!-- INTRO -->
+  <header class="tt-hero">
+    <a href="/#lab" class="tt-back">← Back to site</a>
+    <div class="tt-hero-kicker">
+      <span class="tt-live-dot"></span>
+      <span>AI Lab · Live System</span>
+    </div>
+    <h1 class="tt-hero-title">Thesis<br><em>Tracker</em></h1>
+    <p class="tt-hero-lede">
+      An AI research agent that builds, scores, and tracks investment theses. Give it an idea. Five agents source the filings, argue both sides, score conviction, and draft a dated memo in my voice. Then it logs the idea and measures how my conviction drifts over time.
+    </p>
+    <p class="tt-hero-provenance">
+      This is the same multi-agent workflow engine I built to run my own job search end to end, pointed at markets instead. I did not just use an AI tool. I built one, and I can tell you where it is wrong.
+    </p>
+    <div class="tt-hero-tags">
+      <span class="tt-tag">Interactive demo</span>
+      <span class="tt-tag">Illustrative snapshot data</span>
+      <span class="tt-tag">Runs entirely in your browser</span>
+      <span class="tt-tag">No data leaves this page</span>
+    </div>
+  </header>
+
+  <!-- THE APP -->
+  <section class="tt-shell" aria-label="Thesis Tracker application">
+    <div id="tt-app" class="tt-app"></div>
+    <noscript>
+      <p class="tt-noscript">This is a live JavaScript application. Enable JavaScript to watch the agent pipeline run.</p>
+    </noscript>
+  </section>
+
+  <!-- UNDER THE HOOD -->
+  <section class="tt-explain">
+    <div class="tt-explain-head">
+      <p class="section-eyebrow">Under the hood</p>
+      <h2 class="tt-explain-title">What you just watched,<br><em>and why it maps to my desk</em></h2>
+    </div>
+    <div class="tt-explain-grid">
+      <div class="tt-ex">
+        <p class="tt-ex-n">01</p>
+        <h3 class="tt-ex-h">Source</h3>
+        <p class="tt-ex-b">Tool-using agents pull filings, price, and news in parallel. At CIBC I built and maintained a 600+ security convertible bond database and ran the daily data pulls behind it. Sourcing clean inputs is the unglamorous half of the job.</p>
+      </div>
+      <div class="tt-ex">
+        <p class="tt-ex-n">02</p>
+        <h3 class="tt-ex-h">Analyze</h3>
+        <p class="tt-ex-b">Three agents argue bull, bear, and catalyst at once. I train frontier models at Handshake AI, engineering rubrics to find where they fail. Making several agents disagree on purpose, then judging the output, is exactly that skill.</p>
+      </div>
+      <div class="tt-ex">
+        <p class="tt-ex-n">03</p>
+        <h3 class="tt-ex-h">Score</h3>
+        <p class="tt-ex-b">A transparent weighted model, not a black box. You see fundamentals, valuation, catalyst, moat, and risk, and how they roll into one conviction number. I priced 30+ equity-linked trades off vol surfaces and credit spreads. Numbers you cannot defend are worthless.</p>
+      </div>
+      <div class="tt-ex">
+        <p class="tt-ex-n">04</p>
+        <h3 class="tt-ex-h">Brief</h3>
+        <p class="tt-ex-b">The memo drafts in my house style: warm but serious, direct, quantified, no em dashes. At CIBC I wrote 40+ daily market commentaries for IB and Sales. The agent drafts. A human decides. It never auto-trades.</p>
+      </div>
+      <div class="tt-ex">
+        <p class="tt-ex-n">05</p>
+        <h3 class="tt-ex-h">Track</h3>
+        <p class="tt-ex-b">Every idea is logged and re-scored, so you watch conviction move over time. A CRM for theses. Being early is only worth something if you write it down, date it, and hold yourself to it.</p>
+      </div>
+      <div class="tt-ex tt-ex-arch">
+        <p class="tt-ex-n">·</p>
+        <h3 class="tt-ex-h">The architecture</h3>
+        <p class="tt-ex-b">Multi-agent orchestration, tool use, structured output, and a human-in-the-loop guardrail: draft only, never auto-execute. Built on the same skills-based agent system as my job-search engine. The wedge is not that I use AI. It is that I build it and still own the fundamentals to catch its mistakes.</p>
+      </div>
+    </div>
+    <p class="tt-disclaimer">
+      Illustrative demo for portfolio purposes. Snapshot figures are approximate and dated, not live market data, and nothing here is investment advice.
+    </p>
+  </section>
+
+</div>
+
+<script src="/js/thesis-runtime.js"></script>
+<script src="/js/thesis-data.js"></script>
+<script src="/js/thesis-app.js"></script>

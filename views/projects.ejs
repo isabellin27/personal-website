@@ -1,49 +1,91 @@
-<!-- PROJECTS -->
-<div class="the-case" id="projects">
+<!-- PROOF OF WORK -->
+<div class="proof" id="projects">
   <div class="section-header">
     <div>
-      <p class="section-eyebrow">Independent Work</p>
-      <h2 class="section-title">Selected<br><em>projects</em></h2>
+      <p class="section-eyebrow">Proof of Work</p>
+      <h2 class="section-title">What I have<br><em>built</em></h2>
     </div>
-    <p class="section-subtitle">Quantitative research and data analysis</p>
+    <p class="section-subtitle">Markets, AI, and the systems I ship myself</p>
   </div>
-  <div class="exp-list">
 
-    <div class="exp-row fade-up">
-      <div class="exp-left">
-        <p class="exp-date">Python<br>NumPy<br>Monte Carlo</p>
+  <!-- FLAGSHIP: Thesis Tracker -->
+  <a href="/thesis-tracker" class="proof-hero fade-up">
+    <div class="proof-hero-left">
+      <div class="proof-hero-kicker"><span class="lab-live-dot"></span> Flagship &middot; Live on this site</div>
+      <h3 class="proof-hero-title">Thesis Tracker</h3>
+      <p class="proof-hero-body">An AI equity-research agent that sources data, argues bull against bear with three independent agents, scores conviction on a transparent model, drafts a dated memo in my voice, and tracks how that conviction drifts over time. A full multi-agent workflow I designed and built, running live in your browser.</p>
+      <div class="proof-tags">
+        <span class="proof-tag">Multi-agent orchestration</span>
+        <span class="proof-tag">LLM evaluation</span>
+        <span class="proof-tag">JavaScript</span>
+        <span class="proof-tag">Structured output</span>
+        <span class="proof-tag">Human-in-the-loop</span>
       </div>
-      <div class="exp-right">
-        <h3 class="exp-role">Quantitative Portfolio Optimization</h3>
-        <p class="exp-firm" style="margin-bottom: 16px;">Solo Project &middot; 2025</p>
-        <p style="font-size: 15px; color: var(--text-mid); line-height: 1.8; font-weight: 300; margin-bottom: 20px;">Built a mean-variance portfolio optimizer and Monte Carlo simulation engine using real equity data (GE, GM, IBM, GLD, BA). Constructed tangency and global minimum variance portfolios, compared in-sample vs. out-of-sample Sharpe ratios, and found the constrained (no short-selling) portfolio outperformed unconstrained out-of-sample (Sharpe 0.091 vs. 0.076).</p>
-        <a href="https://github.com/isabellin27/quantitative-finance-analysis" target="_blank" class="exp-tag-pill" style="text-decoration: none;">View on GitHub</a>
+      <span class="proof-hero-cta">Launch the live app &rarr;</span>
+    </div>
+    <div class="proof-hero-right">
+      <div class="proof-mini">
+        <div class="proof-mini-row"><span class="proof-mini-dot done"></span> Source &middot; filings, price, news</div>
+        <div class="proof-mini-row"><span class="proof-mini-dot done"></span> Analyze &middot; bull / bear / catalyst</div>
+        <div class="proof-mini-row"><span class="proof-mini-dot done"></span> Score &middot; conviction 8.6</div>
+        <div class="proof-mini-row"><span class="proof-mini-dot run"></span> Brief &middot; drafting memo</div>
+        <div class="proof-mini-row"><span class="proof-mini-dot"></span> Track &middot; log + drift</div>
       </div>
     </div>
+  </a>
 
-    <div class="exp-row fade-up">
-      <div class="exp-left">
-        <p class="exp-date">Python<br>Sklearn<br>Statsmodels</p>
+  <!-- GRID -->
+  <div class="proof-grid">
+
+    <div class="proof-card fade-up">
+      <p class="proof-card-type">Structured Equity &middot; CIBC</p>
+      <h3 class="proof-card-title">Convertible Bond Intelligence</h3>
+      <p class="proof-card-body">Built and maintained a 600+ security convertible bond database tracking maturities, conversion features, greenshoe status, and sector issuance, then wrote Python automation for Greeks, premiums, and axes distribution that cut roughly 40% of the desk's manual processing time.</p>
+      <div class="proof-tags">
+        <span class="proof-tag">Python</span>
+        <span class="proof-tag">Bloomberg</span>
+        <span class="proof-tag">Derivatives</span>
       </div>
-      <div class="exp-right">
-        <h3 class="exp-role">Predicting Canadian Real Estate Prices</h3>
-        <p class="exp-firm" style="margin-bottom: 16px;">Solo Project &middot; 2025</p>
-        <p style="font-size: 15px; color: var(--text-mid); line-height: 1.8; font-weight: 300; margin-bottom: 20px;">Built a regression model on 5,000 Canadian housing records to identify the key drivers of property value. Applied stepwise linear regression, polynomial feature expansion, and Lasso regularization to address overfitting. Found that interaction effects between bedrooms and square footage matter more than individual features alone.</p>
-        <a href="https://github.com/isabellin27/predicting-real-estate-prices" target="_blank" class="exp-tag-pill" style="text-decoration: none;">View on GitHub</a>
-      </div>
+      <span class="proof-card-meta">CIBC Global Markets &middot; 2025</span>
     </div>
 
-    <div class="exp-row fade-up">
-      <div class="exp-left">
-        <p class="exp-date">R<br>Quarto<br>Data Viz</p>
+    <div class="proof-card fade-up">
+      <p class="proof-card-type">Equity Research</p>
+      <h3 class="proof-card-title">Long NVIDIA, Called in 2023</h3>
+      <p class="proof-card-body">Pitched NVIDIA long and ranked first in class in front of 10+ portfolio managers and senior investors at Brown Advisory, built on trend analysis, financial statements, and valuation multiples. Early on the AI infrastructure thesis, before the run.</p>
+      <div class="proof-tags">
+        <span class="proof-tag">Valuation</span>
+        <span class="proof-tag">Thesis Writing</span>
+        <span class="proof-tag">AI / Semis</span>
       </div>
-      <div class="exp-right">
-        <h3 class="exp-role">Washington State EV Adoption Analysis</h3>
-        <p class="exp-firm" style="margin-bottom: 16px;">Solo Project &middot; 2025</p>
-        <p style="font-size: 15px; color: var(--text-mid); line-height: 1.8; font-weight: 300; margin-bottom: 20px;">Analyzed Washington State EV registration data to uncover adoption trends by model year, geographic disparities in utility infrastructure, and potential greenwashing indicators among automakers. Built in R using Quarto for reproducible reporting.</p>
-        <a href="https://github.com/isabellin27/washington-ev-analysis" target="_blank" class="exp-tag-pill" style="text-decoration: none;">View on GitHub</a>
-      </div>
+      <span class="proof-card-meta">Brown Advisory &middot; 2023</span>
     </div>
+
+    <div class="proof-card fade-up">
+      <p class="proof-card-type">Published Writing</p>
+      <h3 class="proof-card-title">21 Corporate Finance Articles</h3>
+      <p class="proof-card-body">Promoted to Editorial Lead within two months, top 15% of 80+ interns. Authored 21 corporate finance articles and reviewed 45+ peer submissions, driving about 30% traffic growth through SEO and on-page optimization.</p>
+      <div class="proof-tags">
+        <span class="proof-tag">Financial Writing</span>
+        <span class="proof-tag">Editorial</span>
+        <span class="proof-tag">SEO</span>
+      </div>
+      <span class="proof-card-meta">Wall Street Oasis &middot; Editorial Lead</span>
+    </div>
+
+    <a href="https://github.com/isabellin27/quantitative-finance-analysis" target="_blank" rel="noopener" class="proof-card proof-card-link fade-up">
+      <p class="proof-card-type">Quant &middot; Solo Project</p>
+      <h3 class="proof-card-title">Portfolio Optimization Engine</h3>
+      <p class="proof-card-body">Built a mean-variance optimizer and Monte Carlo simulation engine on real equity data. Constructed tangency and minimum-variance portfolios and found the no-short-selling portfolio beat the unconstrained one out-of-sample (Sharpe 0.091 vs 0.076).</p>
+      <div class="proof-tags">
+        <span class="proof-tag">Python</span>
+        <span class="proof-tag">NumPy</span>
+        <span class="proof-tag">Monte Carlo</span>
+      </div>
+      <span class="proof-card-meta proof-card-meta-link">View on GitHub &rarr;</span>
+    </a>
 
   </div>
+
+  <a href="https://github.com/isabellin27" target="_blank" rel="noopener" class="proof-more">More projects on GitHub &rarr;</a>
 </div>
