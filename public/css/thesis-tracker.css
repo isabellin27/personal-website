@@ -63,6 +63,8 @@
   max-width: 720px; padding-left: 18px; border-left: 2px solid var(--gold);
   margin-bottom: 30px;
 }
+.tt-provenance-link { color: var(--gold-light); text-decoration: none; border-bottom: 1px solid var(--panel-line); }
+.tt-provenance-link:hover { color: var(--gold); }
 .tt-hero-tags { display: flex; flex-wrap: wrap; gap: 10px; }
 .tt-tag {
   font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.5px; color: var(--ink-mid);

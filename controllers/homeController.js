@@ -36,6 +36,7 @@ function createPageTitle(page) {
     experience: 'Experience | Isabel Lin',
     contact: 'Contact | Isabel Lin',
     'thesis-tracker': 'Thesis Tracker | Isabel Lin · AI Lab',
+    workbench: 'Desk Workbench | Isabel Lin · AI Lab',
   };
   return titles[page] || `${page.charAt(0).toUpperCase() + page.slice(1)} | Isabel Lin`;
 }

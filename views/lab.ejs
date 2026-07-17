@@ -1,65 +1,84 @@
-<!-- AI LAB — homepage marquee for the Thesis Tracker -->
+<!-- AI LAB: two live systems, the Desk Workbench (OS) and the Thesis Tracker (nested skill) -->
 <section class="lab" id="lab">
   <div class="lab-glow"></div>
   <div class="lab-inner">
     <div class="lab-copy fade-up">
       <div class="lab-eyebrow">
         <span class="lab-live-dot"></span>
-        <span>AI Lab &middot; Live System</span>
+        <span>AI Lab &middot; Two Live Systems</span>
       </div>
-      <h2 class="lab-title">I did not just use AI.<br><em>I built it.</em></h2>
+      <h2 class="lab-title">I did not just use AI.<br><em>I built the system.</em></h2>
       <p class="lab-lede">
-        The <strong>Thesis Tracker</strong> is a working multi-agent research tool. Give it a stock. Five agents source the filings, argue bull against bear, score conviction on a transparent model, and draft a dated memo in my voice. Then it logs the idea and tracks how my conviction drifts over time.
+        The <strong>Desk Workbench</strong> is an agent operating system for a markets desk: a mandate the agent cannot override, a router, seven skills, tools, an append-only record, and guardrails with the authority to refuse. The <strong>Thesis Tracker</strong> is one skill inside it, a five-agent research pipeline you can watch run.
       </p>
       <ul class="lab-points">
-        <li><span class="lab-point-k">Sources</span> filings, price, and news in parallel</li>
-        <li><span class="lab-point-k">Argues</span> both sides with three independent agents</li>
-        <li><span class="lab-point-k">Scores</span> conviction and flags the real risks</li>
-        <li><span class="lab-point-k">Drafts</span> a memo, then a human decides. It never auto-trades</li>
+        <li><span class="lab-point-k">Routes</span> each request to one accountable skill</li>
+        <li><span class="lab-point-k">Enforces</span> risk limits. Told to breach one, it refuses</li>
+        <li><span class="lab-point-k">Records</span> every action in an append-only audit trail</li>
+        <li><span class="lab-point-k">Composes</span> the Thesis Tracker runs as the /thesis skill</li>
       </ul>
       <div class="lab-actions">
-        <a href="/thesis-tracker" class="btn-gold btn-gold-glow"><span class="btn-live-dot"></span> Launch the Thesis Tracker</a>
-        <a href="/thesis-tracker#run=NVDA" class="lab-link">Run the NVIDIA demo &rarr;</a>
+        <a href="/workbench" class="btn-gold btn-gold-glow"><span class="btn-live-dot"></span> Launch the Desk Workbench</a>
+        <a href="/thesis-tracker" class="lab-link">Or run the Thesis Tracker &rarr;</a>
       </div>
-      <p class="lab-provenance">Adapted from the multi-agent, skills-based job-search engine I built to run my own recruiting end to end. Same architecture, pointed at markets.</p>
+      <p class="lab-provenance">Both run on the architecture of the multi-agent engine I built to run my own job search end to end: same mandate files, same skill router, same draft-only guardrails, pointed at markets.</p>
     </div>
 
-    <a class="lab-preview fade-up" href="/thesis-tracker" aria-label="Launch the Thesis Tracker">
-      <div class="lab-card">
-        <div class="lab-card-top">
-          <span class="lab-card-title"><span class="lab-live-dot"></span> Thesis Tracker</span>
-          <span class="lab-card-run">&#9654; RUN</span>
-        </div>
-        <div class="lab-card-chips">
-          <span class="lab-card-chip active">NVDA</span>
-          <span class="lab-card-chip">AVGO</span>
-          <span class="lab-card-chip">TSM</span>
-          <span class="lab-card-chip">VRT</span>
-          <span class="lab-card-chip">MSTR</span>
-        </div>
-        <div class="lab-card-grid">
-          <div class="lab-card-rail">
-            <div class="lab-card-stage done"><span></span>Source</div>
-            <div class="lab-card-stage done"><span></span>Analyze</div>
-            <div class="lab-card-stage done"><span></span>Score</div>
-            <div class="lab-card-stage running"><span></span>Brief</div>
-            <div class="lab-card-stage"><span></span>Track</div>
+    <div class="lab-stack fade-up">
+      <!-- SYSTEM 02: Desk Workbench -->
+      <a class="lab-preview" href="/workbench" aria-label="Launch the Desk Workbench">
+        <div class="lab-card">
+          <div class="lab-card-top">
+            <span class="lab-card-title"><span class="lab-live-dot"></span> Desk Workbench <span class="lab-card-sys">system 02 · the OS</span></span>
+            <span class="lab-card-run">&#9654; RUN</span>
           </div>
-          <div class="lab-card-score">
-            <div class="lab-card-gauge">
-              <span class="lab-card-gauge-n">8.6</span>
-              <span class="lab-card-gauge-m">/ 10</span>
+          <div class="lab-card-grid">
+            <div class="lab-card-rail">
+              <div class="lab-card-stage done"><span></span>Mandate &amp; context</div>
+              <div class="lab-card-stage done"><span></span>Router &rarr; /risk</div>
+              <div class="lab-card-stage done"><span></span>Playbook &middot; tools</div>
+              <div class="lab-card-stage done"><span></span>State &middot; record</div>
+              <div class="lab-card-stage blocked"><span></span>Guardrails &middot; REFUSED</div>
             </div>
-            <p class="lab-card-conv">High conviction long</p>
-            <div class="lab-card-watch">
-              <div class="lab-card-wrow"><span>NVDA</span><span class="up">8.6 &#9650;</span></div>
-              <div class="lab-card-wrow"><span>TSM</span><span class="up">7.6 &#9650;</span></div>
-              <div class="lab-card-wrow"><span>MSTR</span><span class="down">5.3 &#9660;</span></div>
+            <div class="lab-card-score">
+              <p class="lab-card-req">&ldquo;Add 5% NVDA to the book&rdquo;</p>
+              <div class="lab-card-block">
+                <span class="lab-card-block-x">&#10005;</span>
+                <span>8.6% vs 4.0% cap &middot; blocked, escalated to PM</span>
+              </div>
+              <div class="lab-card-watch">
+                <div class="lab-card-wrow"><span>single name</span><span class="down">8.6 / 4.0 &#10005;</span></div>
+                <div class="lab-card-wrow"><span>sector</span><span class="down">27.4 / 25.0 &#10005;</span></div>
+                <div class="lab-card-wrow"><span>audit trail</span><span class="up">logged &#10003;</span></div>
+              </div>
             </div>
           </div>
+          <div class="lab-card-launch">Watch it refuse a bad trade &rarr;</div>
         </div>
-        <div class="lab-card-launch">Launch the live app &rarr;</div>
-      </div>
-    </a>
+      </a>
+
+      <!-- SYSTEM 01: Thesis Tracker -->
+      <a class="lab-preview" href="/thesis-tracker" aria-label="Launch the Thesis Tracker">
+        <div class="lab-card lab-card-min">
+          <div class="lab-card-top">
+            <span class="lab-card-title"><span class="lab-live-dot"></span> Thesis Tracker <span class="lab-card-sys">system 01 · the /thesis skill</span></span>
+            <span class="lab-card-run">&#9654; RUN</span>
+          </div>
+          <div class="lab-card-grid">
+            <div class="lab-card-rail">
+              <div class="lab-card-stage done"><span></span>Source &middot; Analyze &middot; Score</div>
+              <div class="lab-card-stage running"><span></span>Brief &middot; drafting memo</div>
+            </div>
+            <div class="lab-card-score">
+              <div class="lab-card-gauge">
+                <span class="lab-card-gauge-n">8.6</span>
+                <span class="lab-card-gauge-m">/ 10 &middot; NVDA &#9650;</span>
+              </div>
+            </div>
+          </div>
+          <div class="lab-card-launch">Watch five agents build a thesis &rarr;</div>
+        </div>
+      </a>
+    </div>
   </div>
 </section>

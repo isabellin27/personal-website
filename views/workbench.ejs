@@ -1,0 +1,85 @@
+<div class="wb-page">
+
+  <!-- INTRO -->
+  <header class="wb-hero">
+    <a href="/#lab" class="wb-back">← Back to site</a>
+    <div class="wb-hero-kicker">
+      <span class="lab-live-dot"></span>
+      <span>AI Lab · Live System 02</span>
+    </div>
+    <h1 class="wb-hero-title">The Desk<br><em>Workbench</em></h1>
+    <p class="wb-hero-lede">
+      An agent operating system for a markets desk. Not a chatbot with a finance vocabulary: a six-layer system where a mandate the agent cannot override sits above a router, skills, tools, an append-only record, and guardrails with the authority to refuse.
+    </p>
+    <p class="wb-hero-provenance">
+      The question every executive asks about AI on a desk is not "can it write the memo." It is "what happens when it is wrong, and who is accountable." This demo is my answer. Watch the last request: the agent gets told to breach a risk limit, and it says no.
+    </p>
+    <div class="wb-hero-tags">
+      <span class="wb-tag">Interactive demo</span>
+      <span class="wb-tag">Illustrative desk and figures</span>
+      <span class="wb-tag">Runs entirely in your browser</span>
+      <span class="wb-tag">Composes with the Thesis Tracker</span>
+    </div>
+  </header>
+
+  <!-- THE APP -->
+  <section class="wb-shell" aria-label="Desk Workbench application">
+    <div id="wb-app" class="wb-appbox"></div>
+    <noscript>
+      <p class="wb-noscript">This is a live JavaScript application. Enable JavaScript to watch requests move through the six layers.</p>
+    </noscript>
+  </section>
+
+  <!-- THE ARCHITECTURE -->
+  <section class="wb-explain">
+    <div class="wb-explain-head">
+      <p class="section-eyebrow">The architecture</p>
+      <h2 class="wb-explain-title">Six layers,<br><em>and why each one exists</em></h2>
+    </div>
+    <div class="wb-explain-grid">
+      <div class="wb-ex">
+        <p class="wb-ex-n">01</p>
+        <h3 class="wb-ex-h">Mandate &amp; Context</h3>
+        <p class="wb-ex-b">A source of truth the agent reads but cannot rewrite: universe, limits, house style, the current book. Precedence is explicit, so when the model and the mandate disagree, the mandate wins. Every hallucination story you have heard starts with skipping this layer.</p>
+      </div>
+      <div class="wb-ex">
+        <p class="wb-ex-n">02</p>
+        <h3 class="wb-ex-h">Router</h3>
+        <p class="wb-ex-b">Intent goes to exactly one skill, with a confidence score. One request, one accountable playbook. And routing is a control point: the "add 5% NVDA" instruction routes to /risk for a limit check, not to an execution path, because no execution path exists.</p>
+      </div>
+      <div class="wb-ex">
+        <p class="wb-ex-n">03</p>
+        <h3 class="wb-ex-h">Skill Playbooks</h3>
+        <p class="wb-ex-b">Each skill is a written contract: what to read first, the steps, the output rules. The same request produces the same process every time. That is what makes agent output reviewable, and it is the difference between a procedure and a vibe.</p>
+      </div>
+      <div class="wb-ex">
+        <p class="wb-ex-n">04</p>
+        <h3 class="wb-ex-h">Tools</h3>
+        <p class="wb-ex-b">Filings, the vol surface, credit spreads, consensus, the convertible database. The agent orchestrates them but every figure is traceable to a source. On my CIBC desk the rule was simple: an unsourced number does not ship. Same rule here.</p>
+      </div>
+      <div class="wb-ex">
+        <p class="wb-ex-n">05</p>
+        <h3 class="wb-ex-h">State &amp; Record</h3>
+        <p class="wb-ex-b">The book, the decision log, the audit trail. Append-only, so nobody, including the agent, can rewrite what we said last month. That is what makes the postmortem skill honest and the whole system auditable after the fact.</p>
+      </div>
+      <div class="wb-ex">
+        <p class="wb-ex-n">06</p>
+        <h3 class="wb-ex-h">Guardrails</h3>
+        <p class="wb-ex-b">The layer with authority to say no. Limits are enforced, not negotiated. Client-facing output is blocked until a human signs. Execution does not exist as a capability. An agent that cannot refuse is not deployable near a desk, full stop.</p>
+      </div>
+      <div class="wb-ex wb-ex-arch">
+        <p class="wb-ex-n">·</p>
+        <h3 class="wb-ex-h">Where this comes from</h3>
+        <p class="wb-ex-b">This is the second system I have built on this architecture. The first runs my own job search end to end: the same mandate files, the same skill router, the same append-only logs, the same draft-only guardrail. The Thesis Tracker on this site is one skill inside this workbench, which is the point. Pipelines are easy. Systems that compose, govern themselves, and leave a record are the actual work, and that is the work I want to do on a desk.</p>
+      </div>
+    </div>
+    <p class="wb-disclaimer">
+      Illustrative demo for portfolio purposes. The desk, book, limits, and all figures are illustrative; pricing is indicative in form only. Nothing here is investment advice or an offer to transact.
+    </p>
+  </section>
+
+</div>
+
+<script src="/js/thesis-runtime.js"></script>
+<script src="/js/workbench-data.js"></script>
+<script src="/js/workbench-app.js"></script>
