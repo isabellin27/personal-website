@@ -1,0 +1,10 @@
+{
+  "layersDone": 5,
+  "layersBlocked": 1,
+  "refused": true,
+  "outputPanels": 1,
+  "auditAction": "risk",
+  "auditStatus": "blocked · escalated",
+  "handoff": "/structure",
+  "nested": false
+}

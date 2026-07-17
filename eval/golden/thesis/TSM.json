@@ -1,0 +1,11 @@
+{
+  "stagesDone": 5,
+  "complete": true,
+  "bars": 5,
+  "gauge": {
+    "near": 8.3,
+    "tol": 0.45
+  },
+  "memoStart": "July 2026. Thesis: TSMC is the toll boot",
+  "watchlistHasTicker": true
+}

@@ -1,0 +1,10 @@
+{
+  "layersDone": 6,
+  "layersBlocked": 0,
+  "refused": false,
+  "outputPanels": 1,
+  "auditAction": "price",
+  "auditStatus": "logged · not sent",
+  "handoff": "/risk",
+  "nested": false
+}

@@ -405,7 +405,7 @@
   }
 
   function downloadMemo(d) {
-    const text = d.ticker + ' — ' + d.name + '\nThesis memo (demo, illustrative data)\n\n' + d.memo + '\n';
+    const text = d.ticker + ' · ' + d.name + '\nThesis memo (demo, illustrative data)\n\n' + d.memo + '\n';
     const blob = new Blob([text], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

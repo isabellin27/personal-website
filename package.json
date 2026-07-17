@@ -4,7 +4,10 @@
   "description": "my personal website adding about, education, experience, and technical. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node eval/run.js --data-only",
+    "eval": "node eval/run.js",
+    "eval:golden": "node eval/run.js --update-golden"
   },
   "author": "Isabel",
   "license": "ISC",
