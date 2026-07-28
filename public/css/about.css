@@ -881,6 +881,33 @@
 
 .market-frame-fallback:hover { color: #0c1826; }
 
+.market-support-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 48px;
+  margin-top: 72px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.market-support-head h3 {
+  max-width: 560px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--navy);
+}
+
+.market-support-head > p {
+  max-width: 390px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: right;
+}
+
 .market-support-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -901,10 +928,37 @@
   transition: transform .25s, border-color .25s, box-shadow .25s;
 }
 
+.market-support-card .proof-tag {
+  color: var(--text-mid);
+  border-color: rgba(0,0,0,0.1);
+}
+
 .market-support-link:hover {
   transform: translateY(-3px);
   border-color: rgba(180,154,94,0.4);
   box-shadow: 0 18px 45px rgba(12,24,38,0.08);
+}
+
+.project-origin {
+  width: fit-content;
+  margin: -2px 0 18px;
+  padding: 6px 9px;
+  border: 1px solid rgba(12,24,38,0.1);
+  border-radius: 4px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  letter-spacing: .35px;
+}
+
+.project-origin-independent {
+  background: rgba(12,24,38,0.035);
+  color: var(--slate);
+}
+
+.project-origin-assisted {
+  border-color: rgba(180,154,94,0.24);
+  background: rgba(180,154,94,0.08);
+  color: #79652f;
 }
 
 .research-row {
@@ -988,6 +1042,12 @@
   .market-feature { grid-template-columns: 1fr; gap: 10px; padding: 14px; }
   .market-feature-copy { padding: 28px 16px 26px; }
   .market-live-preview { min-height: 570px; }
+  .market-support-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .market-support-head > p { max-width: 580px; text-align: left; }
   .market-support-grid { grid-template-columns: 1fr; }
   .research-row { grid-template-columns: 1fr; gap: 28px; }
   .research-row-items { gap: 24px; }
