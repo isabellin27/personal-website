@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (entry.isIntersecting) {
           navLinks.forEach((link) => {
             link.style.color = 'rgba(255,255,255,0.4)';
-            if (link.getAttribute('href') === '#' + entry.target.id) {
+            if ((link.getAttribute('href') || '').endsWith('#' + entry.target.id)) {
               link.style.color = 'var(--gold-light)';
             }
           });
@@ -35,4 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
   );
 
   sections.forEach((section) => scrollObserver.observe(section));
+
+  // Close the mobile navigation after a destination is selected.
+  const mobileNav = document.querySelector('.nav-mobile');
+  document.querySelectorAll('.nav-mobile-panel a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (mobileNav) mobileNav.removeAttribute('open');
+    });
+  });
 });

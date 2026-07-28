@@ -1,91 +1,113 @@
-<!-- PROOF OF WORK -->
-<div class="proof" id="projects">
+<!-- MARKET TOOLS -->
+<section class="market-tools" id="market-tools">
   <div class="section-header">
     <div>
-      <p class="section-eyebrow">Proof of Work</p>
-      <h2 class="section-title">What I have<br><em>built</em></h2>
+      <p class="section-eyebrow">Market Tools</p>
+      <h2 class="section-title">Built to be<br><em>used</em></h2>
     </div>
-    <p class="section-subtitle">Markets, AI, and the systems I ship myself</p>
+    <p class="section-subtitle">Working research software, desk automation, and quantitative analysis</p>
   </div>
 
-  <!-- FLAGSHIP: the AI Lab (Desk Workbench + nested Thesis Tracker) -->
-  <a href="/workbench" class="proof-hero fade-up">
-    <div class="proof-hero-left">
-      <div class="proof-hero-kicker"><span class="lab-live-dot"></span> Flagship &middot; Two live systems on this site</div>
-      <h3 class="proof-hero-title">Desk Workbench + Thesis Tracker</h3>
-      <p class="proof-hero-body">A six-layer agent operating system for a markets desk: a mandate the agent cannot override, a skill router, tools, an append-only audit trail, and guardrails that refuse a trade that breaches a risk limit. The Thesis Tracker, a five-agent research pipeline, runs inside it as the /thesis skill. I designed and built both, and they run live in your browser.</p>
-      <div class="proof-tags">
-        <span class="proof-tag">Agent architecture</span>
-        <span class="proof-tag">Multi-agent orchestration</span>
-        <span class="proof-tag">Guardrails &amp; audit</span>
-        <span class="proof-tag">JavaScript</span>
-        <span class="proof-tag">Human-in-the-loop</span>
+  <article class="market-feature fade-up" aria-labelledby="bdc-feature-title">
+    <div class="market-feature-copy">
+      <div class="market-feature-kicker">
+        <span class="market-live-dot" aria-hidden="true"></span>
+        Featured working application
       </div>
-      <span class="proof-hero-cta">Launch the live systems &rarr;</span>
-    </div>
-    <div class="proof-hero-right">
-      <div class="proof-mini">
-        <div class="proof-mini-row"><span class="proof-mini-dot done"></span> Mandate &middot; limits, house style</div>
-        <div class="proof-mini-row"><span class="proof-mini-dot done"></span> Router &rarr; /thesis &middot; nested pipeline</div>
-        <div class="proof-mini-row"><span class="proof-mini-dot done"></span> Score &middot; conviction 8.6, logged</div>
-        <div class="proof-mini-row"><span class="proof-mini-dot run"></span> Guardrails &middot; limit check</div>
-        <div class="proof-mini-row"><span class="proof-mini-dot"></span> Audit &middot; append-only record</div>
+      <h3 class="market-feature-title" id="bdc-feature-title">BDC Intelligence</h3>
+      <p class="market-feature-deck">A private-credit monitor that turns current public filings from seven flagship BDC managers into a usable research workspace.</p>
+      <p class="market-feature-body">Track credit developments and maturities, search borrower dossiers, compare manager marks, investigate lender disagreement, and analyze sector exposure without rebuilding the same filing work by hand.</p>
+
+      <dl class="market-feature-stats" aria-label="Q1 2026 application snapshot">
+        <div>
+          <dt>Reporting set</dt>
+          <dd>7 / 7</dd>
+          <span>managers filed</span>
+        </div>
+        <div>
+          <dt>Credit developments</dt>
+          <dd>162</dd>
+          <span>filing-derived</span>
+        </div>
+        <div>
+          <dt>Upcoming maturities</dt>
+          <dd>19</dd>
+          <span>inside 12 months</span>
+        </div>
+      </dl>
+
+      <div class="market-feature-actions">
+        <a href="/bdc-intelligence#live-demo" class="btn-gold">Try the Live Tool</a>
+        <a href="https://bdc-tracker-omega.vercel.app/" target="_blank" rel="noopener" class="market-text-link">Open full application <span aria-hidden="true">↗</span></a>
       </div>
+      <p class="market-feature-note">Q1 2026 snapshot shown here. The embedded application displays its latest available reporting period, coverage, and source links in context.</p>
     </div>
-  </a>
 
-  <!-- GRID -->
-  <div class="proof-grid">
+    <div class="market-live-preview" data-bdc-shell>
+      <div class="market-browser-bar" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <p>bdc intelligence / market</p>
+      </div>
+      <div class="market-frame-loading">
+        <span class="market-loader"></span>
+        <p>Loading the working application…</p>
+      </div>
+      <iframe
+        id="bdc-home-frame"
+        data-bdc-frame
+        data-src="https://bdc-tracker-omega.vercel.app/market"
+        title="Live BDC Intelligence market dashboard"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <a class="market-frame-fallback" href="https://bdc-tracker-omega.vercel.app/market" target="_blank" rel="noopener">Open the live dashboard in a new tab <span aria-hidden="true">↗</span></a>
+    </div>
+  </article>
 
-    <div class="proof-card fade-up">
-      <p class="proof-card-type">Structured Equity &middot; CIBC</p>
+  <div class="market-support-grid" aria-label="Supporting finance work">
+    <article class="market-support-card fade-up">
+      <p class="proof-card-type">Structured Equity · CIBC</p>
       <h3 class="proof-card-title">Convertible Bond Intelligence</h3>
-      <p class="proof-card-body">Built and maintained a 600+ security convertible bond database tracking maturities, conversion features, greenshoe status, and sector issuance, then wrote Python automation for Greeks, premiums, and axes distribution that cut roughly 40% of the desk's manual processing time.</p>
+      <p class="proof-card-body">Built and maintained a 600+ security convertible-bond database, then automated Greeks, premiums, and trader-axes distribution. The workflows cut roughly 40% of the desk’s manual processing time.</p>
       <div class="proof-tags">
         <span class="proof-tag">Python</span>
         <span class="proof-tag">Bloomberg</span>
         <span class="proof-tag">Derivatives</span>
       </div>
-      <span class="proof-card-meta">CIBC Global Markets &middot; 2025</span>
-    </div>
+      <span class="proof-card-meta">Desk-built · used in a live markets workflow</span>
+    </article>
 
-    <div class="proof-card fade-up">
-      <p class="proof-card-type">Equity Research</p>
-      <h3 class="proof-card-title">Long NVIDIA, Called in 2023</h3>
-      <p class="proof-card-body">Pitched NVIDIA long and ranked first in class in front of 10+ portfolio managers and senior investors at Brown Advisory, built on trend analysis, financial statements, and valuation multiples. Early on the AI infrastructure thesis, before the run.</p>
-      <div class="proof-tags">
-        <span class="proof-tag">Valuation</span>
-        <span class="proof-tag">Thesis Writing</span>
-        <span class="proof-tag">AI / Semis</span>
-      </div>
-      <span class="proof-card-meta">Brown Advisory &middot; 2023</span>
-    </div>
-
-    <div class="proof-card fade-up">
-      <p class="proof-card-type">Published Writing</p>
-      <h3 class="proof-card-title">21 Corporate Finance Articles</h3>
-      <p class="proof-card-body">Promoted to Editorial Lead within two months, top 15% of 80+ interns. Authored 21 corporate finance articles and reviewed 45+ peer submissions, driving about 30% traffic growth through SEO and on-page optimization.</p>
-      <div class="proof-tags">
-        <span class="proof-tag">Financial Writing</span>
-        <span class="proof-tag">Editorial</span>
-        <span class="proof-tag">SEO</span>
-      </div>
-      <span class="proof-card-meta">Wall Street Oasis &middot; Editorial Lead</span>
-    </div>
-
-    <a href="https://github.com/isabellin27/quantitative-finance-analysis" target="_blank" rel="noopener" class="proof-card proof-card-link fade-up">
-      <p class="proof-card-type">Quant &middot; Solo Project</p>
+    <a href="https://github.com/isabellin27/quantitative-finance-analysis" target="_blank" rel="noopener" class="market-support-card market-support-link fade-up">
+      <p class="proof-card-type">Quantitative Finance · Solo Project</p>
       <h3 class="proof-card-title">Portfolio Optimization Engine</h3>
-      <p class="proof-card-body">Built a mean-variance optimizer and Monte Carlo simulation engine on real equity data. Constructed tangency and minimum-variance portfolios and found the no-short-selling portfolio beat the unconstrained one out-of-sample (Sharpe 0.091 vs 0.076).</p>
+      <p class="proof-card-body">Built a mean-variance optimizer and Monte Carlo engine on real equity data. Compared tangency and minimum-variance portfolios, with and without short-selling constraints, out of sample.</p>
       <div class="proof-tags">
         <span class="proof-tag">Python</span>
         <span class="proof-tag">NumPy</span>
         <span class="proof-tag">Monte Carlo</span>
       </div>
-      <span class="proof-card-meta proof-card-meta-link">View on GitHub &rarr;</span>
+      <span class="proof-card-meta proof-card-meta-link">View the analysis on GitHub →</span>
     </a>
-
   </div>
 
-  <a href="https://github.com/isabellin27" target="_blank" rel="noopener" class="proof-more">More projects on GitHub &rarr;</a>
-</div>
+  <div class="research-row">
+    <div class="research-row-head">
+      <p class="section-eyebrow">Research &amp; Writing</p>
+      <h3>Analysis behind the systems</h3>
+    </div>
+    <div class="research-row-items">
+      <article>
+        <p>Equity Research</p>
+        <h4>Long NVIDIA, Called in 2023</h4>
+        <span>Ranked first in class before 10+ portfolio managers and senior investors at Brown Advisory.</span>
+      </article>
+      <article>
+        <p>Corporate Finance</p>
+        <h4>21 Published Articles</h4>
+        <span>Promoted to Editorial Lead and reviewed 45+ peer submissions at Wall Street Oasis.</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script src="/js/bdc-embed.js"></script>
